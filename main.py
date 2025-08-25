@@ -10,4 +10,11 @@ def give_text():
 
 from stats import words
 
+from stats import characters_count
+
+
 words(give_text())
+count_variable = characters_count(give_text())
+
+print(count_variable)
+
