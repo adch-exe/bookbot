@@ -1,20 +1,10 @@
-def get_book_text(path):
-    with open(path) as f:
-        file_contents = f.read()
-    return file_contents
-
-def give_text():
-    path = "books/frankenstein.txt"
-    text = get_book_text(path)
-    return text
-
-from stats import words
-
+import sys
+from stats import get_book_text
+from stats import give_text
 from stats import characters_count
+from stats import sort_dictionary
 
-
-words(give_text())
 count_variable = characters_count(give_text())
+sort_dictionary(count_variable)
 
-print(count_variable)
 
